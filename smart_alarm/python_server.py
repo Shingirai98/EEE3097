@@ -6,10 +6,10 @@ import logging
 import base64   # for decoding mp3 data from web server
 
 # important for apache web server:
-project_path = os.environ['smart_alarm_path']
+project_path = os.environ["smart_alarm_path"]
 if project_path not in sys.path:
     sys.path.append(project_path)
-os.chdir(project_path)
+#os.chdir(project_path)
 
 from modules.xml_data import Xml_data
 
